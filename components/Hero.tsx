@@ -39,7 +39,7 @@ export default function Hero() {
               </a>
 
               <a
-                href="https://github.com/kartertech"
+                href="https://github.com/karter-s"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 rounded-md border border-zinc-800 bg-zinc-900/90 px-3.5 py-2 text-xs sm:text-sm font-semibold text-zinc-200 hover:border-zinc-700 hover:bg-zinc-800 hover:text-white transition-colors"

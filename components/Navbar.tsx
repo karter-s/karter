@@ -44,7 +44,7 @@ export default function Navbar() {
             Contact
           </Link>
           <a
-            href="https://github.com/kartertech"
+            href="https://github.com/karter-s"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub Profile"
