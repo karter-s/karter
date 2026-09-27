@@ -3,10 +3,10 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-zinc-800/80 bg-zinc-950/80 backdrop-blur-md">
-      <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-14 sm:h-16 max-w-5xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link
           href="/"
-          className="group flex items-center gap-2 text-sm font-mono tracking-tight"
+          className="group flex items-center gap-2 text-xs sm:text-sm font-mono tracking-tight"
         >
           <span className="flex h-2 w-2 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.7)]"></span>
           <span className="font-semibold text-zinc-100 group-hover:text-emerald-400 transition-colors">
@@ -18,27 +18,27 @@ export default function Navbar() {
           </span>
         </Link>
 
-        <nav className="flex items-center gap-6 text-xs sm:text-sm font-mono">
+        <nav className="flex items-center gap-4 sm:gap-6 text-xs sm:text-sm font-mono">
           <Link
-            href="#case-study"
+            href="/#featured-work"
             className="text-zinc-400 hover:text-zinc-100 transition-colors"
           >
-            Case Study
+            Work
           </Link>
           <Link
-            href="#about"
+            href="/#about"
             className="text-zinc-400 hover:text-zinc-100 transition-colors"
           >
             About
           </Link>
           <Link
-            href="#credentials"
+            href="/#foundations"
             className="text-zinc-400 hover:text-zinc-100 transition-colors"
           >
-            Credentials
+            Foundations
           </Link>
           <Link
-            href="#contact"
+            href="/#contact"
             className="text-zinc-400 hover:text-zinc-100 transition-colors"
           >
             Contact
@@ -48,7 +48,7 @@ export default function Navbar() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="GitHub Profile"
-            className="ml-2 flex items-center gap-1.5 rounded border border-zinc-800 bg-zinc-900/80 px-2.5 py-1 text-xs text-zinc-300 hover:border-zinc-700 hover:bg-zinc-800 hover:text-zinc-100 transition-colors"
+            className="ml-1 sm:ml-2 flex items-center gap-1.5 rounded border border-zinc-800 bg-zinc-900/80 px-2.5 py-1 text-xs text-zinc-300 hover:border-zinc-700 hover:bg-zinc-800 hover:text-zinc-100 transition-colors"
           >
             <svg
               className="h-3.5 w-3.5 fill-current"

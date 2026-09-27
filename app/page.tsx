@@ -1,8 +1,8 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import RatingScopeCaseStudy from "@/components/RatingScopeCaseStudy";
+import FeaturedProjectCard from "@/components/FeaturedProjectCard";
 import About from "@/components/About";
-import Credentials from "@/components/Credentials";
+import TechnicalFoundations from "@/components/TechnicalFoundations";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -12,9 +12,9 @@ export default function Home() {
       <Navbar />
       <main className="flex-1">
         <Hero />
-        <RatingScopeCaseStudy />
+        <FeaturedProjectCard />
         <About />
-        <Credentials />
+        <TechnicalFoundations />
         <Contact />
       </main>
       <Footer />
