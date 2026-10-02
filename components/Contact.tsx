@@ -4,9 +4,9 @@ export default function Contact() {
       <div className="kps-container space-y-6">
         <div className="max-w-2xl space-y-3">
           <span className="kps-eyebrow">Contact</span>
-          <h2 className="kps-h2">Open to cybersecurity and technical operations opportunities.</h2>
+          <h2 className="kps-h2">Let’s connect.</h2>
           <p className="kps-body">
-            Based in Colorado Springs and interested in roles where I can contribute my military technical background while continuing to build real-world cybersecurity experience.
+            Based in Colorado Springs. For professional, technical, or project-related inquiries, reach out by email or GitHub.
           </p>
         </div>
 

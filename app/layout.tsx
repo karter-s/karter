@@ -11,9 +11,10 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Karter Steinle · Cybersecurity & Technical Operations",
   description:
-    "Portfolio of Karter Steinle, a U.S. Army Sergeant transitioning into cybersecurity with CompTIA Security+, an active DoD Secret clearance, and hands-on technical projects.",
+    "U.S. Army veteran, cybersecurity and technical operations professional, CompTIA Security+ certified, with an active DoD Secret clearance.",
   keywords: [
     "Karter Steinle",
+    "U.S. Army Veteran",
     "Cybersecurity",
     "Technical Operations",
     "CompTIA Security+",
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Karter Steinle · Cybersecurity & Technical Operations",
     description:
-      "Hands-on cybersecurity projects, production technical work, and military technical operations experience.",
+      "U.S. Army veteran, cybersecurity and technical operations professional, CompTIA Security+ certified, with an active DoD Secret clearance.",
     type: "website",
     locale: "en_US",
   },

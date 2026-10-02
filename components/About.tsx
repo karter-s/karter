@@ -1,5 +1,5 @@
 const facts = [
-  { value: "6 Years", label: "U.S. Army" },
+  { value: "6 Years", label: "U.S. Army Veteran" },
   { value: "Security+", label: "CompTIA Certified" },
   { value: "Secret", label: "Active DoD Clearance" },
 ];
@@ -10,19 +10,19 @@ export default function About() {
       <div className="kps-container space-y-8">
         <div className="max-w-2xl space-y-3">
           <span className="kps-eyebrow">About</span>
-          <h2 className="kps-h2">Technical transition, grounded in real work.</h2>
+          <h2 className="kps-h2">Disciplined execution, grounded in real systems.</h2>
         </div>
 
         <div className="grid gap-8 lg:grid-cols-[1.5fr_1fr] lg:items-start">
           <div className="space-y-4">
             <p className="kps-body">
-              I’m a U.S. Army Sergeant transitioning into cybersecurity after six years of active-duty service supporting technical and mission-critical operations.
+              I’m a U.S. Army veteran with six years of active-duty experience supporting technical and mission-critical operations in DoD environments. My background combines technical troubleshooting, structured operations, documentation, team leadership, and high-reliability execution.
             </p>
             <p className="kps-body">
-              I’m building my technical experience through hands-on projects and production work, with a focus on understanding how systems operate, how they fail, and how they can be secured.
+              My current work focuses on cybersecurity, secure application design, and practical technical projects. I’m particularly interested in how systems operate, how they fail, and how engineering and security controls can make them more resilient.
             </p>
             <p className="kps-body">
-              My Army background brings structured troubleshooting, documentation, accountability, team leadership, and experience working in high-reliability environments.
+              Alongside my military background, I hold CompTIA Security+, an active DoD Secret clearance, a B.S. in Business Administration from Kansas State University, and the Google Cybersecurity Professional Certificate.
             </p>
           </div>
 

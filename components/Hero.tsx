@@ -8,16 +8,13 @@ export default function Hero() {
           <div className="max-w-2xl space-y-6">
             <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1.5 text-xs font-semibold text-secondary">
               <span className="h-2 w-2 rounded-full bg-action" aria-hidden="true" />
-              <span>U.S. Army Sergeant · Transitioning to Cybersecurity</span>
+              <span>U.S. Army Veteran · Cybersecurity &amp; Technical Operations</span>
             </div>
 
             <div className="space-y-3">
               <h1 className="kps-h1">Karter Steinle</h1>
-              <p className="text-lg font-medium text-primary sm:text-xl">
-                Cybersecurity &amp; Technical Operations
-              </p>
-              <p className="kps-body max-w-xl">
-                Building hands-on cybersecurity skills through practical projects and real production work.
+              <p className="kps-body max-w-xl text-primary sm:text-lg">
+                Cybersecurity, technical operations, and secure application work grounded in military experience and production systems.
               </p>
             </div>
 
@@ -31,7 +28,7 @@ export default function Hero() {
 
             <div className="flex flex-wrap items-center gap-3">
               <a href="#featured-work" className="kps-button kps-button-primary">
-                <span>View Featured Work</span>
+                <span>View Work</span>
                 <span aria-hidden="true">↓</span>
               </a>
 
@@ -51,7 +48,7 @@ export default function Hero() {
                 <span>GitHub</span>
               </a>
 
-              <a href="mailto:karter.kws@gmail.com" className="kps-button kps-button-secondary">
+              <a href="#contact" className="kps-button kps-button-secondary">
                 <svg
                   className="h-4 w-4 fill-none stroke-current"
                   viewBox="0 0 24 24"
@@ -63,7 +60,7 @@ export default function Hero() {
                   <rect width="20" height="16" x="2" y="4" rx="2" />
                   <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                 </svg>
-                <span>Email</span>
+                <span>Contact</span>
               </a>
             </div>
           </div>

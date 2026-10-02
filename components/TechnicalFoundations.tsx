@@ -13,7 +13,7 @@ const groups = [
   },
   {
     title: "Operations",
-    items: ["U.S. Army Sergeant (E-5)", "Standard operating procedures", "OPSEC & physical security", "Technical troubleshooting"],
+    items: ["U.S. Army Veteran (E-5)", "Standard operating procedures", "OPSEC & physical security", "Technical troubleshooting"],
   },
 ];
 

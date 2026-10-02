@@ -1,10 +1,10 @@
-# Karter Steinle — Portfolio
+# Karter Steinle · Portfolio
 
 A personal portfolio showcasing hands-on cybersecurity projects, production technical work, and military technical operations experience. Built with Next.js, Tailwind CSS, and TypeScript.
 
 ## Overview
 
-This repository contains the source code for my professional portfolio. My transition from six years of active-duty U.S. Army service into cybersecurity is grounded in a strong foundation of operations, documentation, and technical troubleshooting.
+This repository contains the source code for my professional portfolio. Grounded in six years of active-duty U.S. Army service, my work combines technical operations, structured documentation, and disciplined troubleshooting with cybersecurity credentials and production application engineering.
 
 - **Focus:** Application Security, Security Operations, and Infrastructure.
 - **Key Credentials:** CompTIA Security+, Active DoD Secret Clearance, B.S. Business Administration.
