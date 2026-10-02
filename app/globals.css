@@ -1,32 +1,124 @@
 @import "tailwindcss";
 
 :root {
-  --background: #09090b;
-  --foreground: #f4f4f5;
-  --card: #121215;
-  --card-border: #27272a;
-  --muted: #a1a1aa;
+  --canvas: #0a0d12;
+  --surface: #0f141b;
+  --surface-raised: #141b24;
+  --surface-quiet: #101720;
+  --text-primary: #f5f7fa;
+  --text-secondary: #aab4c0;
+  --text-tertiary: #738091;
+  --border-subtle: #26303b;
+  --action: #6ea8fe;
+  --action-hover: #8bb9ff;
+  --focus: #7cb2ff;
+  --selection: #1c3555;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
+  --color-surface-quiet: var(--surface-quiet);
+  --color-primary: var(--text-primary);
+  --color-secondary: var(--text-secondary);
+  --color-tertiary: var(--text-tertiary);
+  --color-border: var(--border-subtle);
+  --color-action: var(--action);
+  --color-action-hover: var(--action-hover);
+  --color-focus: var(--focus);
+  --font-sans: var(--font-inter);
 }
 
 html {
   color-scheme: dark;
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  margin: 0;
+  background: var(--canvas);
+  color: var(--text-primary);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-/* Custom subtle code font styles */
-code, kbd, samp, pre {
-  font-family: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+::selection {
+  background: var(--selection);
+  color: var(--text-primary);
+}
+
+:where(a, button, input, select, textarea, summary):focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+@layer components {
+  .kps-container {
+    @apply mx-auto max-w-5xl px-5 sm:px-6 lg:px-8;
+  }
+
+  .kps-section {
+    @apply border-b border-border py-14 sm:py-20;
+  }
+
+  .kps-eyebrow {
+    @apply text-xs font-semibold uppercase tracking-normal text-action;
+  }
+
+  .kps-h1 {
+    @apply text-4xl font-semibold tracking-normal text-primary sm:text-5xl;
+  }
+
+  .kps-h2 {
+    @apply text-3xl font-semibold tracking-normal text-primary sm:text-4xl;
+  }
+
+  .kps-h3 {
+    @apply text-base font-semibold tracking-normal text-primary sm:text-lg;
+  }
+
+  .kps-body {
+    @apply text-sm leading-6 text-secondary sm:text-base sm:leading-7;
+  }
+
+  .kps-caption {
+    @apply text-xs leading-5 text-tertiary;
+  }
+
+  .kps-card {
+    @apply rounded-xl border border-border bg-surface p-5 shadow-sm sm:p-6;
+  }
+
+  .kps-button {
+    @apply inline-flex min-h-11 items-center justify-center gap-2 rounded-lg px-4 text-sm font-semibold transition-colors;
+  }
+
+  .kps-button-primary {
+    @apply bg-primary text-canvas hover:bg-white;
+  }
+
+  .kps-button-secondary {
+    @apply border border-border bg-surface text-secondary hover:border-action/50 hover:bg-surface-raised hover:text-primary;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }
