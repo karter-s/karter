@@ -1,48 +1,38 @@
+const facts = [
+  { value: "6 Years", label: "U.S. Army" },
+  { value: "Security+", label: "CompTIA Certified" },
+  { value: "Secret", label: "Active DoD Clearance" },
+];
+
 export default function About() {
   return (
-    <section id="about" className="py-16 sm:py-20 border-b border-zinc-800/80">
-      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 space-y-8">
-        <div className="space-y-1">
-          <span className="text-xs font-mono font-semibold tracking-wider text-emerald-400 uppercase">
-            ABOUT &amp; APPROACH
-          </span>
-          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-100">
-            Operational Rigor &amp; Defensive Engineering
-          </h2>
+    <section id="about" className="kps-section">
+      <div className="kps-container space-y-8">
+        <div className="max-w-2xl space-y-3">
+          <span className="kps-eyebrow">About</span>
+          <h2 className="kps-h2">Technical transition, grounded in real work.</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Card 1: Transition */}
-          <div className="rounded-xl border border-zinc-800 bg-zinc-900/30 p-6 space-y-3">
-            <span className="text-xs font-mono text-emerald-400">01 / BACKGROUND</span>
-            <h3 className="text-base font-semibold text-zinc-200">
-              Military Discipline to Systems Security
-            </h3>
-            <p className="text-xs sm:text-sm text-zinc-400 leading-relaxed">
-              As an active-duty U.S. Army Sergeant, my baseline is grounded in standard operating procedures, accountability, and calm troubleshooting under pressure. I apply that same structured operational discipline to defensive cybersecurity.
+        <div className="grid gap-8 lg:grid-cols-[1.5fr_1fr] lg:items-start">
+          <div className="space-y-4">
+            <p className="kps-body">
+              I’m a U.S. Army Sergeant transitioning into cybersecurity after six years of active-duty service supporting technical and mission-critical operations.
+            </p>
+            <p className="kps-body">
+              I’m building my technical experience through hands-on projects and production work, with a focus on understanding how systems operate, how they fail, and how they can be secured.
+            </p>
+            <p className="kps-body">
+              My Army background brings structured troubleshooting, documentation, accountability, team leadership, and experience working in high-reliability environments.
             </p>
           </div>
 
-          {/* Card 2: Core Focus */}
-          <div className="rounded-xl border border-zinc-800 bg-zinc-900/30 p-6 space-y-3">
-            <span className="text-xs font-mono text-emerald-400">02 / CORE FOCUS</span>
-            <h3 className="text-base font-semibold text-zinc-200">
-              Defensive Operations &amp; Assurance
-            </h3>
-            <p className="text-xs sm:text-sm text-zinc-400 leading-relaxed">
-              Actively developing practical competency in security operations (SOC), telemetry analysis, boundary defense, and federal governance frameworks such as NIST SP 800-53 and the Risk Management Framework (RMF).
-            </p>
-          </div>
-
-          {/* Card 3: Philosophy */}
-          <div className="rounded-xl border border-zinc-800 bg-zinc-900/30 p-6 space-y-3">
-            <span className="text-xs font-mono text-emerald-400">03 / PHILOSOPHY</span>
-            <h3 className="text-base font-semibold text-zinc-200">
-              Evidence-First Technical Work
-            </h3>
-            <p className="text-xs sm:text-sm text-zinc-400 leading-relaxed">
-              I focus on work that can be defended with tangible evidence: verified configuration baselines, measurable risk reduction, and concrete architecture decisions rather than superficial checkboxes or assumed expertise.
-            </p>
+          <div className="grid grid-cols-3 gap-3 lg:grid-cols-1">
+            {facts.map((fact) => (
+              <div key={fact.value} className="kps-card p-4 sm:p-5">
+                <div className="text-lg font-semibold text-primary">{fact.value}</div>
+                <div className="mt-1 text-xs leading-5 text-tertiary sm:text-sm">{fact.label}</div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
