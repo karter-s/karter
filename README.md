@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Karter Steinle — Portfolio
 
-## Getting Started
+A personal portfolio showcasing hands-on cybersecurity projects, production technical work, and military technical operations experience. Built with Next.js, Tailwind CSS, and TypeScript.
 
-First, run the development server:
+## Overview
+
+This repository contains the source code for my professional portfolio. My transition from six years of active-duty U.S. Army service into cybersecurity is grounded in a strong foundation of operations, documentation, and technical troubleshooting.
+
+- **Focus:** Application Security, Security Operations, and Infrastructure.
+- **Key Credentials:** CompTIA Security+, Active DoD Secret Clearance, B.S. Business Administration.
+- **Tech Stack:** Next.js (App Router), TypeScript, Tailwind CSS.
+
+## Running Locally
+
+To run the portfolio locally:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000` to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contact
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Feel free to explore my featured case studies or reach out directly at karter.kws@gmail.com.

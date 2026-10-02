@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Internal Work Orders and Agent Instructions
+AGENTS.md
+CLAUDE.md
+WorkOrders/
+KarterPortfolio/WorkOrders/
+
