@@ -53,7 +53,7 @@ export default function FeaturedProjectCard() {
 
               <h3 className="text-2xl font-semibold tracking-normal text-primary sm:text-3xl">
                 <Link href="/projects/ratingscope" className="transition-colors hover:text-action">
-                  RatingScope — Production Application Security Case Study
+                  RatingScope: Production Application Security Case Study
                 </Link>
               </h3>
 
