@@ -1,30 +1,24 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
   title: "Karter Steinle — Cybersecurity & Technical Operations",
   description:
-    "Technical portfolio and security engineering case study. U.S. Army Sergeant building practical experience in defensive security, systems security, and information assurance.",
+    "Portfolio of Karter Steinle, a U.S. Army Sergeant transitioning into cybersecurity with CompTIA Security+, an active DoD Secret clearance, and hands-on technical projects.",
   keywords: [
     "Karter Steinle",
     "Cybersecurity",
     "Technical Operations",
-    "Defensive Security",
-    "SOC",
-    "Information Assurance",
-    "RMF",
-    "Systems Security",
+    "CompTIA Security+",
+    "DoD Secret Clearance",
+    "Colorado Springs",
     "RatingScope",
   ],
   authors: [{ name: "Karter Steinle" }],
@@ -32,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Karter Steinle — Cybersecurity & Technical Operations",
     description:
-      "Technical portfolio and security engineering case study. U.S. Army Sergeant building practical experience in defensive security, systems security, and information assurance.",
+      "Hands-on cybersecurity projects, production technical work, and military technical operations experience.",
     type: "website",
     locale: "en_US",
   },
@@ -44,11 +38,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} dark scroll-smooth`}
-    >
-      <body className="min-h-screen bg-zinc-950 text-zinc-100 antialiased selection:bg-emerald-500/20 selection:text-emerald-300">
+    <html lang="en" className={inter.variable}>
+      <body className="min-h-screen bg-canvas text-primary antialiased">
         {children}
       </body>
     </html>

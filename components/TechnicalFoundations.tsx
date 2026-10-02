@@ -1,111 +1,48 @@
+const groups = [
+  {
+    title: "Systems & Shell",
+    items: ["Linux (Debian / Ubuntu)", "Bash / shell basics", "CLI administration", "Git / GitHub workflow"],
+  },
+  {
+    title: "Networking & Web",
+    items: ["TCP/IP & DNS", "HTTP/HTTPS", "Content Security Policy (CSP)", "HSTS & TLS configuration"],
+  },
+  {
+    title: "Security",
+    items: ["NIST CSF concepts", "Access-control concepts", "Principle of least privilege", "Security monitoring fundamentals"],
+  },
+  {
+    title: "Operations",
+    items: ["U.S. Army Sergeant (E-5)", "Standard operating procedures", "OPSEC & physical security", "Technical troubleshooting"],
+  },
+];
+
 export default function TechnicalFoundations() {
   return (
-    <section id="foundations" className="py-16 sm:py-20 border-b border-zinc-800/80">
-      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 space-y-8">
-        <div className="space-y-1">
-          <span className="text-xs font-mono font-semibold tracking-wider text-emerald-400 uppercase">
-            FOUNDATIONS &amp; COMPETENCIES
-          </span>
-          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-zinc-100">
-            Technical Foundations
-          </h2>
-          <p className="text-xs sm:text-sm text-zinc-400 max-w-xl">
-            Core systems knowledge, operational discipline, and security standards applied across technical projects.
+    <section id="foundations" className="kps-section">
+      <div className="kps-container space-y-8">
+        <div className="max-w-2xl space-y-3">
+          <span className="kps-eyebrow">Technical Foundations</span>
+          <h2 className="kps-h2">Skills I can explain and apply today.</h2>
+          <p className="kps-body">
+            Current foundations from Security+, hands-on technical work, production application work, and military operations.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs font-mono">
-          {/* Card 1: Operating Systems */}
-          <div className="rounded-xl border border-zinc-800 bg-zinc-900/30 p-5 space-y-3">
-            <span className="text-emerald-400 font-semibold block">SYSTEMS &amp; SHELL</span>
-            <ul className="space-y-1.5 text-zinc-300">
-              <li className="flex items-center gap-1.5">
-                <span className="text-emerald-500">▹</span>
-                <span>Linux (Debian / Ubuntu)</span>
-              </li>
-              <li className="flex items-center gap-1.5">
-                <span className="text-emerald-500">▹</span>
-                <span>Bash / Shell scripting</span>
-              </li>
-              <li className="flex items-center gap-1.5">
-                <span className="text-emerald-500">▹</span>
-                <span>CLI administration</span>
-              </li>
-              <li className="flex items-center gap-1.5">
-                <span className="text-emerald-500">▹</span>
-                <span>Git / GitHub workflow</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Card 2: Networking & Web */}
-          <div className="rounded-xl border border-zinc-800 bg-zinc-900/30 p-5 space-y-3">
-            <span className="text-emerald-400 font-semibold block">NETWORKING &amp; WEB</span>
-            <ul className="space-y-1.5 text-zinc-300">
-              <li className="flex items-center gap-1.5">
-                <span className="text-emerald-500">▹</span>
-                <span>TCP/IP &amp; DNS protocols</span>
-              </li>
-              <li className="flex items-center gap-1.5">
-                <span className="text-emerald-500">▹</span>
-                <span>HTTP/HTTPS architecture</span>
-              </li>
-              <li className="flex items-center gap-1.5">
-                <span className="text-emerald-500">▹</span>
-                <span>Content Security Policy (CSP)</span>
-              </li>
-              <li className="flex items-center gap-1.5">
-                <span className="text-emerald-500">▹</span>
-                <span>HSTS &amp; TLS configuration</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Card 3: Governance & Assurance */}
-          <div className="rounded-xl border border-zinc-800 bg-zinc-900/30 p-5 space-y-3">
-            <span className="text-emerald-400 font-semibold block">SECURITY &amp; RMF</span>
-            <ul className="space-y-1.5 text-zinc-300">
-              <li className="flex items-center gap-1.5">
-                <span className="text-emerald-500">▹</span>
-                <span>NIST SP 800-53 controls</span>
-              </li>
-              <li className="flex items-center gap-1.5">
-                <span className="text-emerald-500">▹</span>
-                <span>Risk Management Framework</span>
-              </li>
-              <li className="flex items-center gap-1.5">
-                <span className="text-emerald-500">▹</span>
-                <span>Principle of Least Privilege</span>
-              </li>
-              <li className="flex items-center gap-1.5">
-                <span className="text-emerald-500">▹</span>
-                <span>Continuous monitoring</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Card 4: Operations & Leadership */}
-          <div className="rounded-xl border border-zinc-800 bg-zinc-900/30 p-5 space-y-3">
-            <span className="text-emerald-400 font-semibold block">OPERATIONS &amp; OPSEC</span>
-            <ul className="space-y-1.5 text-zinc-300">
-              <li className="flex items-center gap-1.5">
-                <span className="text-emerald-500">▹</span>
-                <span>U.S. Army Sergeant (E-5)</span>
-              </li>
-              <li className="flex items-center gap-1.5">
-                <span className="text-emerald-500">▹</span>
-                <span>Standard Operating Procedures</span>
-              </li>
-              <li className="flex items-center gap-1.5">
-                <span className="text-emerald-500">▹</span>
-                <span>OPSEC &amp; physical security</span>
-              </li>
-              <li className="flex items-center gap-1.5">
-                <span className="text-emerald-500">▹</span>
-                <span>Technical maintenance checks</span>
-              </li>
-            </ul>
-          </div>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {groups.map((group) => (
+            <div key={group.title} className="kps-card">
+              <h3 className="text-sm font-semibold text-primary">{group.title}</h3>
+              <ul className="mt-4 space-y-2 text-sm leading-6 text-secondary">
+                {group.items.map((item) => (
+                  <li key={item} className="flex gap-2">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-action" aria-hidden="true" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </div>
     </section>

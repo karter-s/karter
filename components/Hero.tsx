@@ -2,38 +2,35 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative py-12 sm:py-16 border-b border-zinc-800/80">
-      <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col-reverse sm:flex-row items-start sm:items-center justify-between gap-6 sm:gap-8">
-          <div className="flex flex-col items-start gap-4 max-w-2xl">
-            {/* Operational Status Badge */}
-            <div className="inline-flex items-center gap-2 rounded-full border border-emerald-500/30 bg-emerald-950/30 px-3 py-1 text-xs font-mono font-medium text-emerald-400">
-              <span className="relative flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500"></span>
-              </span>
-              <span>U.S. Army Sergeant • Transitioning to Cybersecurity</span>
+    <section className="kps-section">
+      <div className="kps-container">
+        <div className="flex flex-col-reverse items-start justify-between gap-8 sm:flex-row sm:items-center">
+          <div className="max-w-2xl space-y-6">
+            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3 py-1.5 text-xs font-semibold text-secondary">
+              <span className="h-2 w-2 rounded-full bg-action" aria-hidden="true" />
+              <span>U.S. Army Sergeant · Transitioning to Cybersecurity</span>
             </div>
 
-            {/* Core Identity */}
-            <div className="space-y-1.5">
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-zinc-100">
-                Karter Steinle
-              </h1>
-              <p className="text-lg sm:text-xl font-mono text-zinc-300">
+            <div className="space-y-3">
+              <h1 className="kps-h1">Karter Steinle</h1>
+              <p className="text-lg font-medium text-primary sm:text-xl">
                 Cybersecurity &amp; Technical Operations
               </p>
-              <p className="text-sm sm:text-base text-emerald-400 font-mono">
-                Building practical experience in defensive security, systems security, and information assurance.
+              <p className="kps-body max-w-xl">
+                Building hands-on cybersecurity skills through practical projects and real production work.
               </p>
             </div>
 
-            {/* Direct Verified Actions */}
-            <div className="flex flex-wrap items-center gap-3 pt-1">
-              <a
-                href="#featured-work"
-                className="inline-flex items-center gap-1.5 rounded-md bg-zinc-100 px-3.5 py-2 text-xs sm:text-sm font-semibold text-zinc-950 hover:bg-zinc-200 transition-colors"
-              >
+            <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-secondary">
+              <span>CompTIA Security+</span>
+              <span aria-hidden="true" className="text-tertiary">·</span>
+              <span>Active DoD Secret Clearance</span>
+              <span aria-hidden="true" className="text-tertiary">·</span>
+              <span>B.S. Business Administration</span>
+            </div>
+
+            <div className="flex flex-wrap items-center gap-3">
+              <a href="#featured-work" className="kps-button kps-button-primary">
                 <span>View Featured Work</span>
                 <span aria-hidden="true">↓</span>
               </a>
@@ -42,13 +39,9 @@ export default function Hero() {
                 href="https://github.com/karter-s"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 rounded-md border border-zinc-800 bg-zinc-900/90 px-3.5 py-2 text-xs sm:text-sm font-semibold text-zinc-200 hover:border-zinc-700 hover:bg-zinc-800 hover:text-white transition-colors"
+                className="kps-button kps-button-secondary"
               >
-                <svg
-                  className="h-4 w-4 fill-current"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
+                <svg className="h-4 w-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"
@@ -58,12 +51,9 @@ export default function Hero() {
                 <span>GitHub</span>
               </a>
 
-              <a
-                href="mailto:karter.kws@gmail.com"
-                className="inline-flex items-center gap-1.5 rounded-md border border-zinc-800 bg-zinc-900/90 px-3.5 py-2 text-xs sm:text-sm font-semibold text-zinc-200 hover:border-zinc-700 hover:bg-zinc-800 hover:text-white transition-colors"
-              >
+              <a href="mailto:karter.kws@gmail.com" className="kps-button kps-button-secondary">
                 <svg
-                  className="h-4 w-4 stroke-current fill-none"
+                  className="h-4 w-4 fill-none stroke-current"
                   viewBox="0 0 24 24"
                   strokeWidth="2"
                   strokeLinecap="round"
@@ -78,19 +68,16 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Compact Profile Image Container */}
           <div className="shrink-0 self-center sm:self-auto">
-            <div className="relative h-28 w-28 sm:h-36 sm:w-36 rounded-2xl border border-zinc-800 bg-zinc-900/80 p-1 shadow-lg shadow-zinc-950/60">
-              <div className="relative h-full w-full overflow-hidden rounded-xl bg-zinc-950">
-                <Image
-                  src="/headshot.png"
-                  alt="Karter Steinle"
-                  fill
-                  priority
-                  className="object-cover"
-                  sizes="(max-width: 640px) 112px, 144px"
-                />
-              </div>
+            <div className="relative h-28 w-28 overflow-hidden rounded-xl border border-border bg-surface shadow-sm sm:h-36 sm:w-36">
+              <Image
+                src="/headshot.png"
+                alt="Karter Steinle"
+                fill
+                priority
+                className="object-cover"
+                sizes="(max-width: 640px) 112px, 144px"
+              />
             </div>
           </div>
         </div>
